@@ -1,0 +1,15 @@
+{
+  "name": "eslint-plugin-arvin",
+  "version": "1.0.0",
+  "description": "Arvin's ESLint rules",
+  "main": "index.js",
+  "author": "Arvin Ashtari",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": ">= 7"
+  }
+}
