@@ -4,12 +4,18 @@
   "description": "Arvin's ESLint rules",
   "main": "index.js",
   "author": "Arvin Ashtari",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arvin7/eslint-config-arvin.git"
+  },
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
   "license": "ISC",
   "peerDependencies": {
-    "eslint": ">= 7"
+    "eslint": ">= 7",
+    "eslint-plugin-import": ">= 2",
+    "eslint-plugin-unused-imports": ">= 2"
   }
 }
