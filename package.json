@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-arvin",
+  "name": "eslint-config-arvin",
   "version": "1.0.1",
   "description": "Arvin's ESLint rules",
   "main": "index.js",
