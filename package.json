@@ -15,7 +15,9 @@
   "license": "ISC",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">= 5",
-    "eslint": ">= 8",
+    "eslint": ">= 8.23.0",
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 4",
     "eslint-plugin-import": ">= 2",
     "eslint-plugin-unused-imports": ">= 2"
   }
