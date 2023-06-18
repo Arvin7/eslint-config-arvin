@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-arvin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Arvin's ESLint rules",
   "main": "index.js",
   "author": "Arvin Ashtari",
@@ -14,7 +14,8 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "eslint": ">= 7",
+    "@typescript-eslint/eslint-plugin": ">= 5",
+    "eslint": ">= 8",
     "eslint-plugin-import": ">= 2",
     "eslint-plugin-unused-imports": ">= 2"
   }
