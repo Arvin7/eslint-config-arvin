@@ -3,9 +3,12 @@ module.exports = {
     "eslint:recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended",
   ],
 
-  plugins: ["import", "unused-imports"],
+  plugins: ["import", "unused-imports", "@typescript-eslint"],
+
+  parser: "@typescript-eslint/parser",
 
   rules: {
     "prefer-template": "error",
@@ -26,8 +29,6 @@ module.exports = {
         "newlines-between": "always",
       },
     ],
-
-    "react/jsx-curly-brace-presence": ["error", "never"],
 
     "@typescript-eslint/naming-convention": [
       "error",
