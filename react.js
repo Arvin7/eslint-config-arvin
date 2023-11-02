@@ -7,5 +7,6 @@ module.exports = {
 
   rules: {
     "react/jsx-curly-brace-presence": ["error", "never"],
+    "react/jsx-boolean-value": ["error", "never"],
   },
 };
