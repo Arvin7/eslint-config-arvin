@@ -14,6 +14,7 @@ module.exports = {
     "prefer-template": "error",
     "prefer-destructuring": "error",
     "object-shorthand": "error",
+    "newline-before-return": "error",
 
     "unused-imports/no-unused-imports": "error",
     "import/no-unused-modules": "error",
@@ -37,6 +38,7 @@ module.exports = {
         format: ["UPPER_CASE"],
       },
     ],
+    "@typescript-eslint/array-type": ["error", { default: "generic" }],
   },
 
   ignorePatterns: ["build", "dist"],
