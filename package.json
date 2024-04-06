@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-arvin",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Arvin's ESLint rules",
   "main": "index.js",
   "author": "Arvin Ashtari",
@@ -14,9 +14,9 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">= 6",
-    "@typescript-eslint/parser": ">= 6",
-    "eslint": ">= 8.23.0",
+    "@typescript-eslint/eslint-plugin": ">= 7",
+    "@typescript-eslint/parser": ">= 7",
+    "eslint": ">= 9.0.0",
     "eslint-plugin-import": ">= 2",
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 4",
