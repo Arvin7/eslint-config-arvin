@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-arvin",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Arvin's ESLint rules",
   "main": "index.js",
   "author": "Arvin Ashtari",
