@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-arvin",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Arvin's ESLint rules",
   "main": "index.js",
   "author": "Arvin Ashtari",
@@ -23,6 +23,7 @@
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 5",
     "eslint-plugin-unused-imports": ">= 4",
+    "eslint-plugin-vitest": "^0.5.4",
     "globals": ">= 15",
     "typescript-eslint": ">= 8"
   },
