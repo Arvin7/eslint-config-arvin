@@ -17,6 +17,7 @@ One plugin to share my common ESLint rules across different projects.
 ```js
 import arvinConfig from "eslint-config-arvin";
 import arvinReactConfig from "eslint-config-arvin/react.js";
+import arvinVitestConfig from "eslint-config-arvin/vitest.js";
 
-export default [...arvinConfig, ...arvinReactConfig];
+export default [...arvinConfig, ...arvinReactConfig ...arvinVitestConfig];
 ```
