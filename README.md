@@ -21,3 +21,12 @@ import arvinVitestConfig from "eslint-config-arvin/vitest.js";
 
 export default [...arvinConfig, ...arvinReactConfig ...arvinVitestConfig];
 ```
+
+## Supported Configurations
+
+```js
+import arvinReactConfig from "eslint-config-arvin/react.js";
+import arvinNextConfig from "eslint-config-arvin/next.js";
+import arvinViteConfig from "eslint-config-arvin/vite.js";
+import arvinVitestConfig from "eslint-config-arvin/vitest.js";
+```
