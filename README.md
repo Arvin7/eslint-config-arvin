@@ -9,7 +9,7 @@ One plugin to share my common ESLint rules across different projects.
 
 ## Usage
 
-1. Create a ESLint config file (should be module file: `mjs`) in your project root directory:
+1. Create a ESLint config file (should be a module file: `mjs`) in your project root directory:
    `eslint.config.mjs`
 
 2. Copy/paste:

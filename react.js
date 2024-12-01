@@ -14,5 +14,10 @@ export default [
       "react/jsx-boolean-value": ["error", "never"],
       "react/self-closing-comp": ["error"],
     },
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
   },
 ];

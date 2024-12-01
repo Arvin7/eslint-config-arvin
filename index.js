@@ -54,6 +54,12 @@ export default [
       "@typescript-eslint/array-type": ["error", { default: "generic" }],
     },
 
+    settings: {
+      "import/resolver": {
+        typescript: {},
+      },
+    },
+
     ignores: ["build", "dist"],
   },
 ];
