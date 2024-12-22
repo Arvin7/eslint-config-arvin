@@ -44,6 +44,7 @@ export default [
         },
       ],
 
+      "@typescript-eslint/consistent-type-imports": "error",
       "@typescript-eslint/naming-convention": [
         "error",
         {
