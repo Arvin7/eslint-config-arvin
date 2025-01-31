@@ -9,7 +9,7 @@ One plugin to share my common ESLint rules across different projects.
 
 ## Usage
 
-1. Create a ESLint config file (should be a module file: `mjs`) in your project root directory:
+1. Create a ESLint config file in your project root directory:
    `eslint.config.mjs`
 
 2. Copy/paste:
@@ -17,16 +17,17 @@ One plugin to share my common ESLint rules across different projects.
 ```js
 import arvinConfig from "eslint-config-arvin";
 import arvinReactConfig from "eslint-config-arvin/react.js";
-import arvinVitestConfig from "eslint-config-arvin/vitest.js";
-
-export default [...arvinConfig, ...arvinReactConfig ...arvinVitestConfig];
-```
-
-## Supported Configurations
-
-```js
-import arvinReactConfig from "eslint-config-arvin/react.js";
-import arvinNextConfig from "eslint-config-arvin/next.js";
 import arvinViteConfig from "eslint-config-arvin/vite.js";
-import arvinVitestConfig from "eslint-config-arvin/vitest.js";
+
+export default [...arvinConfig, ...arvinReactConfig, ...arvinViteConfig];
 ```
+
+## All Supported Configurations
+
+| Config                    | Import                                                           |
+| ------------------------- | ---------------------------------------------------------------- |
+| JavaScript and TypeScript | `import arvinConfig from "eslint-config-arvin";`                 |
+| React                     | `import arvinReactConfig from "eslint-config-arvin/react.js";`   |
+| Next.js                   | `import arvinNextConfig from "eslint-config-arvin/next.js";`     |
+| Vite                      | `import arvinViteConfig from "eslint-config-arvin/vite.js";`     |
+| Vitest                    | `import arvinVitestConfig from "eslint-config-arvin/vitest.js";` |
