@@ -1,16 +1,12 @@
-import vitest from "eslint-plugin-vitest";
+import vitest from "@vitest/eslint-plugin";
 
 export default [
   {
-    files: [" **/*.test.ts", "**/*.test.tsx"],
+    files: ["**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts", "**/*.spec.tsx"],
     plugins: { vitest },
     rules: {
       ...vitest.configs.recommended.rules,
-    },
-    languageOptions: {
-      globals: {
-        ...vitest.environments.env.globals,
-      },
+      "vitest/max-nested-describe": ["error", { max: 3 }],
     },
   },
 ];
