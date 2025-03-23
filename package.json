@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-arvin",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "description": "Arvin's ESLint rules",
   "main": "index.js",
   "author": "Arvin Ashtari",
@@ -15,21 +15,21 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "@eslint/js": ">=9.17.0",
-    "@next/eslint-plugin-next": ">=15.1.2",
+    "@eslint/js": ">=9",
+    "@next/eslint-plugin-next": ">=15",
     "@typescript-eslint/eslint-plugin": ">= 8",
     "@typescript-eslint/parser": ">= 8",
-    "@vitest/eslint-plugin": "^1.1.25",
+    "@vitest/eslint-plugin": "^1",
     "eslint-import-resolver-typescript": ">= 3",
     "eslint-plugin-import": ">= 2.31.0",
-    "eslint-plugin-react": ">= 7.37.2",
+    "eslint-plugin-react": ">= 7.37.4",
     "eslint-plugin-react-hooks": ">= 5",
-    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-react-refresh": "^0.4.19",
     "eslint-plugin-unused-imports": ">= 4.1.4",
     "globals": ">= 15",
-    "typescript-eslint": ">= 8.15.0"
+    "typescript-eslint": ">= 8.27.0"
   },
   "peerDependencies": {
-    "eslint": ">= 9.17.0"
+    "eslint": ">= 9.23.0"
   }
 }
