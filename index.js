@@ -1,8 +1,8 @@
 import eslint from "@eslint/js";
-import importPlugin from "eslint-plugin-import";
-import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
+import importPlugin from "eslint-plugin-import";
 import tseslint from "typescript-eslint";
+import unusedImports from "eslint-plugin-unused-imports";
 
 export default [
   eslint.configs.recommended,
@@ -19,8 +19,6 @@ export default [
         tsconfigRootDir: import.meta.dirname,
       },
     },
-  },
-  {
     plugins: {
       "unused-imports": unusedImports,
     },
@@ -54,13 +52,11 @@ export default [
       ],
       "@typescript-eslint/array-type": ["error", { default: "generic" }],
     },
-
     settings: {
       "import/resolver": {
         typescript: {},
       },
     },
-
     ignores: ["build", "dist"],
   },
 ];
