@@ -5,14 +5,15 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default [
-  { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
-  { languageOptions: { globals: globals.browser } },
   eslint.configs.recommended,
   importPlugin.flatConfigs.recommended,
   importPlugin.flatConfigs.typescript,
   ...tseslint.configs.recommendedTypeChecked,
   {
+    name: "arvin",
+    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     languageOptions: {
+      globals: globals.browser,
       parserOptions: {
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
@@ -27,7 +28,6 @@ export default [
       "prefer-template": "error",
       "prefer-destructuring": "error",
       "object-shorthand": "error",
-      "newline-before-return": "error",
 
       "unused-imports/no-unused-imports": "error",
       "import/no-unused-modules": "error",
