@@ -1,6 +1,6 @@
 import nextPlugin from "@next/eslint-plugin-next";
 
-export default [
+export const nextJsConfig = [
   {
     name: "next.js",
     plugins: {
@@ -9,11 +9,6 @@ export default [
     rules: {
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs["core-web-vitals"].rules,
-    },
-    settings: {
-      "import/resolver": {
-        typescript: {},
-      },
     },
   },
 ];

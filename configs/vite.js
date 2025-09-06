@@ -1,6 +1,6 @@
 import reactRefresh from "eslint-plugin-react-refresh";
 
-export default [
+export const viteConfig = [
   {
     name: "vite",
     plugins: {
