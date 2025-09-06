@@ -5,6 +5,7 @@ export const reactConfig = [
   reactPlugin.configs.flat.recommended,
   reactPlugin.configs.flat["jsx-runtime"],
   {
+    name: "react",
     plugins: {
       "react-hooks": reactHooksPlugin,
     },
