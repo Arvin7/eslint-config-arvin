@@ -10,7 +10,7 @@ export const recommendedConfig = [
   importPlugin.flatConfigs.typescript,
   ...tsEslint.configs.recommendedTypeChecked,
   {
-    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+    files: ["**/*.{js,mjs,cjs,jsx,ts,tsx}"],
     languageOptions: {
       globals: globals.browser,
       parserOptions: {
@@ -25,7 +25,6 @@ export const recommendedConfig = [
       "prefer-template": "error",
       "prefer-destructuring": "error",
       "object-shorthand": "error",
-      "newline-before-return": "error",
 
       "unused-imports/no-unused-imports": "error",
       "import/no-unused-modules": "error",
@@ -42,6 +41,7 @@ export const recommendedConfig = [
         },
       ],
 
+      "@typescript-eslint/method-signature-style": ["error", "property"],
       "@typescript-eslint/consistent-type-imports": "error",
       "@typescript-eslint/naming-convention": [
         "error",

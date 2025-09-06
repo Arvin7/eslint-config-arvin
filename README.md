@@ -4,9 +4,6 @@ One plugin to share my common ESLint rules across different projects.
 
 ![Heh](https://media.giphy.com/media/M3o3fL9nnxG4o/giphy.gif)
 
-- Use v2.x for ESLint v9.13.0 and above
-- Use v1.0.9 for ESLint v8.57.0 and below
-
 ## Usage
 
 1. Create a ESLint config file in your project root directory:
@@ -16,18 +13,20 @@ One plugin to share my common ESLint rules across different projects.
 
 ```js
 import arvinConfig from "eslint-config-arvin";
-import arvinReactConfig from "eslint-config-arvin/react.js";
-import arvinViteConfig from "eslint-config-arvin/vite.js";
 
-export default [...arvinConfig, ...arvinReactConfig, ...arvinViteConfig];
+export default [
+  ...arvinConfig.configs.recommended,
+  ...arvinConfig.configs.react,
+  ...arvinConfig.configs.vitest,
+];
 ```
 
 ## All Supported Configurations
 
-| Config                    | Import                                                           |
-| ------------------------- | ---------------------------------------------------------------- |
-| JavaScript and TypeScript | `import arvinConfig from "eslint-config-arvin";`                 |
-| React                     | `import arvinReactConfig from "eslint-config-arvin/react.js";`   |
-| Next.js                   | `import arvinNextConfig from "eslint-config-arvin/next.js";`     |
-| Vite                      | `import arvinViteConfig from "eslint-config-arvin/vite.js";`     |
-| Vitest                    | `import arvinVitestConfig from "eslint-config-arvin/vitest.js";` |
+| Config                    | Import                            |
+| ------------------------- | --------------------------------- |
+| JavaScript and TypeScript | `arvinConfig.configs.recommended` |
+| React                     | `arvinConfig.configs.react`       |
+| Next.js                   | `arvinConfig.configs.nextJs`      |
+| Vite                      | `arvinConfig.configs.vite`        |
+| Vitest                    | `arvinConfig.configs.vitest`      |
