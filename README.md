@@ -18,8 +18,19 @@ export default [
   ...arvinConfig.configs.recommended,
   ...arvinConfig.configs.react,
   ...arvinConfig.configs.vitest,
+  {
+    languageOptions: {
+      parserOptions: {
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
 ];
 ```
+
+The last block tells typescript-eslint where your project's `tsconfig.json` lives. Without it, type-aware rules
+fall back to the directory ESLint was started from, so running ESLint from a subfolder (as some editors and
+monorepo tools do) fails with a parsing error.
 
 ## All Supported Configurations
 
@@ -53,3 +64,4 @@ Other changes:
 - `import/no-unused-modules` was removed; it cannot run under ESLint 10.
 - `eslint-plugin-react-hooks` v7 enables the React Compiler rules (`purity`, `refs`, `set-state-in-effect`, …) in its recommended preset.
 - `settings.react.version` is no longer needed.
+- `tsconfigRootDir` is no longer set by this package (it pointed at the package's own folder in `node_modules`). Set it in your own config as shown in [Usage](#usage).

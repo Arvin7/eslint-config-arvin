@@ -16,7 +16,6 @@ export const recommendedConfig = [
       globals: globals.browser,
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname,
       },
     },
     plugins: {
