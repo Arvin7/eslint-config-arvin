@@ -16,7 +16,7 @@ const duplicateHooksRules = Object.fromEntries(
 export const reactConfig = [
   eslintReact.configs["recommended-typescript"],
   {
-    name: "react",
+    name: "arvin/react",
     plugins: {
       "react-hooks": reactHooksPlugin,
       "@stylistic": stylistic,

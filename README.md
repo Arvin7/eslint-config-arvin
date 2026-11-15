@@ -1,6 +1,6 @@
 # Arvin's ESLint Rules
 
-One plugin to share my common ESLint rules across different projects.
+A shareable ESLint config with my common rules, for use across projects.
 
 ![Heh](https://media.giphy.com/media/M3o3fL9nnxG4o/giphy.gif)
 
@@ -64,4 +64,12 @@ Other changes:
 - `import/no-unused-modules` was removed; it cannot run under ESLint 10.
 - `eslint-plugin-react-hooks` v7 enables the React Compiler rules (`purity`, `refs`, `set-state-in-effect`, …) in its recommended preset.
 - `settings.react.version` is no longer needed.
+- `build/` and `dist/` folders are now actually ignored (the old `ignores` entry had no effect).
+- Type-aware rules no longer run on plain `.js`/`.mjs`/`.cjs`/`.jsx` files, which usually aren't in `tsconfig.json` and failed with a parsing error.
+- Unused variables are reported by `unused-imports/no-unused-vars` instead of `@typescript-eslint/no-unused-vars`. Names starting with `_` are allowed.
+- `import-x/no-unresolved`, `named`, `namespace`, `default` and `no-named-as-default-member` are off for TypeScript files, since TypeScript already checks them.
+- Config files (`*.config.*`), `.cjs` files and `scripts/` get Node globals, and `require()` is allowed in `.cjs` files.
+- The Vite config allows constant exports next to components (`allowConstantExport`).
+- The Vitest config also matches `.js`/`.jsx` test files.
+- Type declarations are included, so `eslint.config.ts` works.
 - `tsconfigRootDir` is no longer set by this package (it pointed at the package's own folder in `node_modules`). Set it in your own config as shown in [Usage](#usage).

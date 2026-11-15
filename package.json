@@ -3,6 +3,12 @@
   "version": "4.0.0",
   "description": "Arvin's ESLint rules",
   "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "configs"
+  ],
   "author": "Arvin Ashtari",
   "type": "module",
   "repository": {
@@ -14,13 +20,15 @@
     "eslintconfig"
   ],
   "license": "ISC",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
   "dependencies": {
     "@eslint-react/eslint-plugin": "^5.30.2",
     "@eslint/js": "^10.0.1",
     "@next/eslint-plugin-next": "^16.4.6",
     "@stylistic/eslint-plugin": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^8.72.2",
-    "@typescript-eslint/parser": "^8.72.2",
     "@vitest/eslint-plugin": "^1.6.28",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-import-x": "^4.18.1",

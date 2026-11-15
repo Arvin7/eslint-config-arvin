@@ -2,8 +2,8 @@ import vitest from "@vitest/eslint-plugin";
 
 export const vitestConfig = [
   {
-    name: "vitest",
-    files: ["**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts", "**/*.spec.tsx"],
+    name: "arvin/vitest",
+    files: ["**/*.{test,spec}.{js,mjs,cjs,jsx,ts,mts,cts,tsx}"],
     plugins: { vitest },
     rules: {
       ...vitest.configs.recommended.rules,
