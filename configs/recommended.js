@@ -1,5 +1,6 @@
 import eslint from "@eslint/js";
-import importPlugin from "eslint-plugin-import";
+import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
+import importPlugin from "eslint-plugin-import-x";
 import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
 import tsEslint from "typescript-eslint";
@@ -27,9 +28,8 @@ export const recommendedConfig = [
       "object-shorthand": "error",
 
       "unused-imports/no-unused-imports": "error",
-      "import/no-unused-modules": "error",
-      "import/newline-after-import": "error",
-      "import/order": [
+      "import-x/newline-after-import": "error",
+      "import-x/order": [
         "error",
         {
           alphabetize: {
@@ -54,9 +54,7 @@ export const recommendedConfig = [
     },
 
     settings: {
-      "import/resolver": {
-        typescript: {},
-      },
+      "import-x/resolver-next": [createTypeScriptImportResolver()],
     },
 
     ignores: ["build", "dist"],

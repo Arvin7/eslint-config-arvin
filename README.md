@@ -30,3 +30,26 @@ export default [
 | Next.js                   | `arvinConfig.configs.nextJs`      |
 | Vite                      | `arvinConfig.configs.vite`        |
 | Vitest                    | `arvinConfig.configs.vitest`      |
+
+## Requirements
+
+- ESLint `^10.0.0`
+- TypeScript `>=6.0 <6.1` (required by `@vitest/eslint-plugin` and `typescript-eslint`)
+
+## Migrating from v3 (ESLint 9) to v4 (ESLint 10)
+
+`eslint-plugin-import` and `eslint-plugin-react` do not support ESLint 10, so they were replaced. Update any `eslint-disable` comments that reference the old rule names:
+
+| v3 rule                         | v4 rule                                |
+| ------------------------------- | -------------------------------------- |
+| `import/*`                      | `import-x/*`                           |
+| `react/jsx-curly-brace-presence`| `@stylistic/jsx-curly-brace-presence`  |
+| `react/jsx-boolean-value`       | `@stylistic/jsx-shorthand-boolean`     |
+| `react/self-closing-comp`       | `@stylistic/jsx-self-closing-comp`     |
+| `react/*` (recommended)         | `@eslint-react/*` (recommended-typescript) |
+
+Other changes:
+
+- `import/no-unused-modules` was removed; it cannot run under ESLint 10.
+- `eslint-plugin-react-hooks` v7 enables the React Compiler rules (`purity`, `refs`, `set-state-in-effect`, …) in its recommended preset.
+- `settings.react.version` is no longer needed.
