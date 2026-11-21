@@ -2,12 +2,16 @@ import reactRefresh from "eslint-plugin-react-refresh";
 
 export const viteConfig = [
   {
-    name: "vite",
+    name: "arvin/vite",
     plugins: {
       "react-refresh": reactRefresh,
     },
     rules: {
-      "react-refresh/only-export-components": "warn",
+      // Vite's HMR handles constant exports next to components.
+      "react-refresh/only-export-components": [
+        "warn",
+        { allowConstantExport: true },
+      ],
     },
   },
 ];
